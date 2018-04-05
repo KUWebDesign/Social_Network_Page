@@ -9,6 +9,7 @@
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 		<link rel="stylesheet" href="/normalize.css">
 		<link rel="stylesheet" href="/main.css">
+		
 	</head>
 	
 	<body>
@@ -27,20 +28,75 @@
 				</div>
 				<div class="row">
 					<div class="col">
-						<button type="button" class="btn btn-block btn-lg btn-primary">Create Account</button>
+						<button type="button" id="createAccount" class="btn btn-block btn-lg btn-primary">Create Account</button>
 					</div>
 					<div class="col">
-						<button type="submit" class="btn btn-block btn-lg btn-outline-primary">Log In</button>
+						<button type="submit" id="logIn" class="btn btn-block btn-lg btn-outline-primary">Log In</button>
 					</div>
 				</div>
 				
 				
 			</form>
+
+			<!-- The Modal -->
+			<div id="myModal" class="modal">
+
+			<!-- Modal content -->
+			<div class="modal-content">
+				<div class="modal-header">
+					<h3>Create an Account</h3>
+					<span class="close">&times;</span>
+				</div>
+				<!-- Form in modal body -->
+				<div class="modal-body">
+					<form class="createAccountForm">
+						<div class="row center">
+							<div class="form-group col">
+								<input type="text" class="form-control" id="firstNameAC" placeholder="First Name">	
+							</div>
+							<div class="form-group col">
+								<input type="text" class="form-control" id="lastNameAC" placeholder="Last Name">
+							</div>
+							<input type="email" class="form-control createEmail" id="emailAC" placeholder="Email">
+							<input type="password" class="form-control" id="passwordAC" placeholder="Password">
+						</div>
+						<br>
+
+						<h4> Choose your favorite color: <h4>
+						<label>
+							<input type="radio" name="color" value="green">
+							<img class="color" src="/green.png">
+						</label>
+						<label>
+							<input type="radio" name="color" value="red">
+							<img class="color" src="/red.jpg">
+						</label>
+						<label>
+							<input type="radio" name="color" value="yellow">
+							<img class="color" src="/yellow.jpg">
+						</label>
+						<label>
+							<input type="radio" name="color" value="blue">
+							<img class="color" src="/blue.png">
+						</label>
+
+						<div>
+						<br>
+						<button type="submit" id="submitAC" class="btn btn-block btn-lg btn-primary">Create Account</button>
+						</div>
+					</form>
+				</div>
+				<div class="modal-footer">
+				</div>
+			</div>
+
+			</div>
 			
 		</div>
 		
 		
-		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+		<script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+		<script src="/login.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 	</body>
