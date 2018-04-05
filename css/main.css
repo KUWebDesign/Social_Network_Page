@@ -94,8 +94,8 @@ body {font-family: Arial, Helvetica, sans-serif;}
 
 /* Start of color radio buttons */
 .color{
-	width: 20px;
-	height: 20px;
+	width: 25px;
+	height: 25px;
 }
 
 label > input{ /* HIDE RADIO */
@@ -107,7 +107,17 @@ label > input{ /* HIDE RADIO */
 	border:2px solid transparent;
   }
   label > input:checked + img{ /* (RADIO CHECKED) IMAGE STYLES */
-	border:2px solid #f00;
+	border:2px solid #000000;
   }
 
   /* End of color radio buttons */
+
+  .slLeft{
+    padding: 0;
+    margin-right: 2.5%;
+  }
+
+  .slRight{
+    padding: 0;
+    margin-left: 2.5%;
+  }
