@@ -34,12 +34,12 @@
 	<!--<img class="topCorner" src="/TopCorner.png">-->
 	<!--<img class="bottomCorner" src="/BottomCorner.png">-->
 		<div class="container">
-			<form class="login" action="/home" method="POST">
+			<form class="login" action="/" method="POST">
 				<div class="form-group">
-					<input type="email" class="form-control" name="emailLogin" id="emailLogin" aria-describedby="emailHelp" placeholder="Email" required>
+					<input type="email" class="form-control" name="username" id="username" aria-describedby="emailHelp" placeholder="Email" required>
 				</div>
 				<div class="form-group">
-					<input type="password" class="form-control" name="passwordLogin" id="passwordLogin" placeholder="Password" required>
+					<input type="password" class="form-control" name="password" id="password" placeholder="Password" required>
 				</div>
 				<div class="form-check">
 					<input type="checkbox" value="" class="form-check-input" id="rememberLogin">
@@ -68,16 +68,16 @@
 				</div>
 				<!-- Form in modal body -->
 				<div class="modal-body">
-					<form class="createAccountForm">
+					<form class="createAccountForm" action="/home" method="post">
 						<div class="row">
 								<div class="form-group col slLeft">
-									<input type="text" class="form-control" id="firstNameAC" placeholder="First Name">	
+									<input type="text" class="form-control" id="fNameAC" name="fNameAC" placeholder="First Name" required>	
 								</div>
 								<div class="form-group col slRight">
-									<input type="text" class="form-control" id="lastNameAC" placeholder="Last Name">
+									<input type="text" class="form-control" id="lNameAC" name="lNameAC" placeholder="Last Name" required>
 								</div>
-							<input type="email" class="form-control createEmail" id="emailAC" placeholder="Email">
-							<input type="password" class="form-control" id="passwordAC" placeholder="Password">
+							<input type="email" class="form-control createEmail" id="username" name="username" placeholder="Email" required>
+							<input type="password" class="form-control" id="password" name="password" placeholder="Password" required>
 						</div>
 						<br>
 
